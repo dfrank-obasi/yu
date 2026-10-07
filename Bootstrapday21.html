@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in Bootstrap(Responsive, Striped, Bordered)</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <!-- Basic Table Structure -->
+     <div class="table-responsive">
+     <table class="table table-striped table-bordered table-hover">
+        <thread>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thread>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Jane Smith</td>
+                <td>jane@example.com</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Jane Smith</td>
+                <td>jane@example.com</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Jane Smith</td>
+                <td>jane@example.com</td>
+            </tr>
+        </tbody>
+     </table>
+     </div>
+
+     <!-- Striped Rows -->
+      <table class="table table-striped">
+        ...
+      </table>
+
+      <!-- Bordered Tables -->
+       <table class="table table-bordered">
+        ...
+       </table>
+
+       <!-- Hover Effect -->
+        <table class="table table-hover">
+            ...
+        </table>
+
+        <!-- Small & Responsive Tables -->
+         <!-- Small table (compact padding) -->
+         <table class="table table-sm">
+            ...
+         </table>
+
+         <!-- Responsive table -->
+          <div class="table-responsive">
+            <table class="table">
+                ...
+            </table>
+          </div>
+
+          <!-- Table Captions & Headers -->
+           Add a caption for context:
+           <table class="table">
+            <caption>List of users</caption>
+            ...
+           </table>
+
+           Use scope="col" for headers
+           <th scope="col">Name</th>
+           <th scope="col">Email</th>
+
+           <!-- Table Contextual Classes -->
+            Highlights rows with colors:
+            <tr class="table-primary">...nnn</tr>
+            <tr class="table-success">...nnn</tr>
+            <tr class="table-warning">...nnn</tr>
+            <tr class="table-danger">...nnn</tr>
+
+            <!-- Full Working Example -->
+             <div class="container py-5">
+
+                <h3>Basic Table</h3>
+                <table class="table table-striped table-hover
+                table-bordered table-sm">
+                    <caption>List of users</caption>
+                    <thread>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                        </tr>
+                    </thread>
+                    <tbody>
+                        <tr class="table-primary">
+                            <th>1</th>
+                            <th>John Doe</th>
+                            <th>john@example.com</th>
+                            <th>Active</th>
+                        </tr>
+                        <tr class="table-success">
+                            <th>2</th>
+                            <th>Jane Smith</th>
+                            <th>jane@example.com</th>
+                            <th>Verified</th>
+                        </tr>
+                        <tr class="table-warning">
+                            <th>3</th>
+                            <th>Mike Brown</th>
+                            <th>mike@example.com</th>
+                            <th>Pending</th>
+                        </tr>
+                        <tr class="table-danger">
+                            <th>4</th>
+                            <th>Linda White</th>
+                            <th>linda@example.com</th>
+                            <th>Inactive</th>
+                        </tr>
+                    </tbody>
+                </table>
+
+             </div>
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges & Tooltips in Bootstrap</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <!-- Basic Badges -->
+     <span class="badge bg-primary">Primary</span>
+     <span class="badge bg-success">Success</span>
+     <span class="badge bg-danger">Danger</span>
+
+     <!-- Pill Badges -->
+      Rounded badges:
+      <span class="badges bg-info rounded-pill ">Info</span>
+      <span class="badges bg-warning text-dark rounded-pill">warning</span>
+
+      <!-- Badges in Buttons & Links -->
+       <button class="btn btn-primary">Notifications
+        <span class="badge bg-light text-dark">4</span>
+       </button>
+
+    <a href="#" class="btn btn-success">Message
+        <span class="badge bg-danger">12</span>
+    </a>
+
+    <!-- Badge Positioning -->
+     Use position utilites to place badges on top of icons:
+     <button class="btn btn-secondary position-relative mb-3 mt-5">Inbox
+        <span class="position-absolute top-0 start-100
+        translate-middle badge rounded-pill bg-danger">5
+            <span class="visually-hidden">unread messages</span>
+        </span>
+     </button>
+
+     <!-- Tooltip Basics -->
+      Tooltip shows info on hover:
+      <button type="button" class="btn btn-secondary"
+      data-bs-toggle="tooltip" data-bs-placement="top"
+      title="Tooltip text">
+        Hover me
+      </button>
+
+      <script>
+        var tooltipTriggerList =
+        [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        tooltipTriggerList.map(function (el) {return new bootstrap.tooltip(el)})
+      </script>
+
+      <!-- Tooltip Placement -->
+       <button class="btn btn-info" data-bs-toggle="tooltip"
+       data-bs-placement="bottom" title="Bottom Tooltip">
+        Bottom
+       </button>
+       <button class="btn btn-info" data-bs-toggle="tooltip"
+       data-bs-placement="start" title="Left Tooltip">
+        Left
+       </button>
+       <button class="btn btn-info" data-bs-toggle="tooltip"
+       data-bs-placement="end" title="Right Tooltip">
+        Right
+       </button>
+
+       <!-- Tooltip with HTML Content -->
+        <button class="btn btn-dark" data-bs-toggle="tooltip"
+        data-bs-html="true" title="<b>Bold</b> tooltip">
+            HTML Tooltip
+        </button>
+
+        <!-- Full Working Example -->
+         <div class="container py-5">
+
+            <h3>Badges</h3>
+            <span class="badge bg-primary">Primary</span>
+            <span class="badge bg-success rounded-pill">Success</span>
+            <span class="badge bg-danger rounded-pill">Danger</span>
+
+            <h3>Badges in Buttons</h3>
+            <button class="btn btn-primary position-relative me-3">
+                Inbox
+                <span class="position-absolute top-0 start-100 
+                translate-middle badges rounded-pill bg-danger">
+                    5
+                    <span class="visually-hidden">
+                        unread messages
+                    </span>
+                </span>
+            </button>
+
+            <h3 class="mt-4">Tooltips</h3>
+            <button class="btn btn-secondary me-2" data-bs-toggle="tooltip"
+            data-bs-placement="top" title="Top tooltip">
+                Top
+            </button>
+            <button class="btn btn-secondary me-2" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" title="Bottom tooltip">
+                Bottom
+            </button>
+            <button class="btn btn-dark me-2" data-bs-toggle="tooltip"
+            data-bs-placement="top" title="<b>Bold</b> Tooltip"
+            data-bs-html="true">
+                HTML Tooltip
+            </button>
+            
+         </div>
+
+         <script>
+        var tooltipTriggerList =
+        [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        tooltipTriggerList.map(function (el) {return new bootstrap.tooltip(el)})
+      </script>
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

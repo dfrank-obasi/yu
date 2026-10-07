@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-bottom: 2px;
+            width: 100px;
+            height: 50px;
+            background: greenyellow;
+            animation: any 5s infinite;
+            /* animation-duration: 10s; */
+            /* animation-delay: 2s; */
+            position: relative;
+            /* animation-iteration-count: 4; */
+            /* animation-direction: alternate-reverse; */
+        }
+
+       #div1 {animation-timing-function: linear;}
+       #div2 {animation-timing-function: ease;}
+       #div3 {animation-timing-function: ease-in;}
+       #div4 {animation-timing-function: ease-out;}
+       #div5 {animation-timing-function: ease-in-out;}
+
+       @keyframes any {
+         from {left: 0px;}
+         to {left: 400px;}
+       }
+
+        /* @keyframes any {
+            0% {
+                background-color: greenyellow; left: 0px; top: 0px;
+            }
+            25% {background-color: aqua; left: 200px; top: 0px;}
+            50% {background-color: navajowhite; left: 200px; top: 200px;}
+            75% {background-color: magenta; left: 0px; top: 200px;}
+            100% {background-color: chocolate; left: 0px; top: 0px;}
+        } */
+    </style>
+</head>
+<body>
+    <div #div1>div 1</div>
+    <div #div2>div 2</div>
+    <div #div3>div 3</div>
+    <div #div4>div 4</div>
+    <div #div5>div 5</div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Layout Example on Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg 
+     navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">MySite</a>
+            <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+     </nav>
+
+         <!-- Carousel -->
+        <div id="heroCarousel" class="carousel slide mb-5" 
+          data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="cinqueterre.jpg" 
+                    class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-md-block">
+                        <h3>Welcome to MySite</h3>
+                        <p>Professional Bootstrap Template.</p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="cars3.jpg" style="height: 73rem;"
+                    class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-md-block">
+                        <h3>Responsive & Modern</h3>
+                        <p>Professional Bootstrap Template.</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" 
+            data-bs-target="#heroCarousel" 
+            data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" 
+            data-bs-target="#heroCarousel" 
+            data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+
+            <!-- Card Section -->
+             <div class="container mb-5">
+                <div class="row row-cols-1 row-cols-md-3 
+                g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="cellphone.jpg" class="card-img-top" 
+                            alt="Service 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Service 1</h5>
+                                <p>High-quality service description here.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="cellphone.jpg" class="card-img-top" 
+                            alt="Service 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Service 2</h5>
+                                <p>Professional solution for your needs.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="cellphone.jpg" class="card-img-top" 
+                            alt="Service 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Service 3</h5>
+                                <p>Reliable services with modern design.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+             </div>
+
+
+                 <!-- Table -->
+            <div class="container mb-5">
+                <h4 class="mb-3">User Dashboard</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover 
+                    table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-primary">
+                                <td>1</td>
+                                <td>Alice</td>
+                                <td>alice@example.com</td>
+                                <td>Admin</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Bob</td>
+                                <td>bob@example.com</td>
+                                <td>User</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Charlie</td>
+                                <td>charlie@example.com</td>
+                                <td>User</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>     
+            
+            
+            <!-- Footer -->
+             <footer class="bg-dark text-white py-4">
+                <div class="container text-center">
+                    <p>&copy; 2026 MySite. All rights reserved.</p>
+                    <div>
+                        <a href="#" class="text-white me-3">Privacy</a>
+                        <a href="#" class="text-white">Terms</a>
+                    </div>
+                </div>
+             </footer>
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

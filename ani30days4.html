@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #060617;
+            color: white;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        .cloth {
+            width: 400px;
+            background: #cc06;
+            height: 200px;
+            line-height: 2;
+            border-radius: 200px;
+        }
+        .row {
+            margin-bottom: 1.5rem;
+        }
+        .bar {
+            background-color: greenyellow;
+            height: 12px;
+            border-radius: 999px;
+            width: 0%;
+
+            transition-property: width;
+            transition-duration: 1.5s;
+        }
+        .linear {transition-timing-function: linear;}
+        .ease-out {transition-timing-function: ease-out;}
+        .ease-in-out {transition-timing-function: ease-in-out;}
+        .cubic-bezier {cubic-bezier(0, 10, 40, 0.85);}
+
+        .cloth:hover .bar {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="cloth">
+        <div class="row">
+            <span>Linear</span>
+            <div class="bar linear"></div>
+        </div>
+
+        <div class="row">
+            <span>Ease-out</span>
+            <div class="bar ease-out"></div>
+        </div>
+
+        <div class="row">
+            <span>Ease-in-out</span>
+            <div class="bar ease-in-out"></div>
+        </div>
+
+        <div>
+            <span>Cubic-bezier</span>
+            <div class="bar cubic-bezier"></div>
+        </div>
+    </div>
+</body
+>
+</html>

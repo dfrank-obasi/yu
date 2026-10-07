@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background: #020617;
+            color: white;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: system-ui, sans-serif;
+        }
+        .card {
+            width: 300px;
+            background: #020617;
+            border-radius: 16px;
+            overflow: hidden;
+            cursor: pointer;
+
+            transition:
+             transform 0.35s ease-out,
+             box-shadow 0.35s ease-out;
+        }
+        .image {
+            height: 180px;
+            background: linear-gradient(135deg, #2563eb, #60a5fa);
+
+            transform: scale(1);
+            transition: transform 0.4s ease;
+        }
+        .content {
+            padding: 1.5rem;
+        }
+        .content h3 {
+            margin: 0;
+            color: white;
+        }
+        .content p {
+            color: #cbd5f5;
+            opacity: 0;
+
+            transform: translateY(10px);
+
+            transition: 
+            opacity 0.3s ease-out 0.1s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 50px rgba (0, 0, 0, 0.5);
+        }
+        .card:hover .image {
+            transform: scale(1.05);
+        }
+        .card:hover .content p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image"></div>
+        <div class="content">
+            <h3>Explore</h3>
+            <p>Beautiful animations guide attention.</p>
+        </div>
+    </div>
+</body>
+</html>

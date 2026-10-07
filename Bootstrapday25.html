@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Card in Bootstrap</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <!-- Basic Card Structure -->
+     <div class="card mb-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+     </div>
+
+     <!-- Card Headers and Footers -->
+      <div class="card mb-3">
+        <div class="card-header">Featured</div>
+        <div class="card-body">
+            <h5 class="card-title">Special title</h5>
+            <p class="card-text">With supporting text.</p>
+        </div>
+
+        <div class="card-footer text-muted">2 days ago</div>
+
+      </div>
+
+
+      <!-- Card Images -->
+       Top Image
+       <div class="card mb-3" style="width: 18rem;">
+        <img src="chicago.jpg" 
+        class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card with image</h5>
+            <p class="card-text">Image on top example.</p>
+        </div>
+
+       </div>
+
+       <!-- Background image / overlay: -->
+        <div class="card text-white mb-3">
+            <img src="chicago.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h5 class="card-title">Overlay title</h5>
+                <p class="card-text">Overlay text over image.</p>
+            </div>
+        </div>
+
+
+        <!-- Card Group & Grid Layout -->
+         Card group (equal height):
+         <div class="card-group mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card 1</h5>
+                    <p class="card-text">Content 1</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card 2</h5>
+                    <p class="card-text">Content 2</p>
+                </div>
+            </div>
+
+         </div>
+
+
+         Grid layout with responsive columns:
+         <div class="row row-cols-1 row-cols-md-3 mb-3" g-4>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="closegirl.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">card 1</h5>
+                        <p>Text 1</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="cherries.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">card 2</h5>
+                        <p>Text 2</p>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+
+
+         <!-- Card with Buttons and Links -->
+          <div class="card mb-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Interactive Card</h5>
+                <p class="card-text">Card with mutiple buttons</p>
+                <a href="#" class="btn btn-primary me-2">Go</a>
+                <a href="#" class="btn btn-secondary">More</a>
+            </div>
+          </div>
+
+
+          <!-- Full Working Example -->
+           <div class="container py-5">
+
+            <h3>Best Card</h3>
+            <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">Example text inside a card.</p>
+                </div>
+            </div>
+
+            <h3>Card with Header, Footer and Image.</h3>
+            <div class="card mb-3">
+                <div class="card-header">Featured</div>
+                <img src="cinqueterre.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Special title</h5>
+                    <p class="card-text">With supporting text.</p>
+                </div>
+                <div class="card-footer text-muted">2 days ago.</div>
+            </div>
+
+            <h3>Card group</h3>
+            <div class="card-group mb-3">
+                <div class="card">
+                    <div class="card-group">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">content 1</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-group">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">content 2</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3>Grid of Cards</h3>
+            <div class="row row-cols-1 row-cols-md-3 mb-3" g-4>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="closegirl.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">card 1</h5>
+                        <p>Text 1</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="cherries.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">card 2</h5>
+                        <p>Text 2</p>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+
+           </div>
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

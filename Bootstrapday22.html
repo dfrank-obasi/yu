@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Form Controls in Bootstrap</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <!-- Basic Form Structure -->
+     <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail" class="form-label">
+                Email Address
+            </label>
+            <input type="email" class="form-control"
+            id="exampleInputEmail" placeholder="Enter Email">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">
+                Password
+            </label>
+            <input type="password" class="form-control"
+            id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <button type="submit" class="btn 
+        btn-primary">Submit</button>
+
+     </form>
+
+     <!-- Form Input Types -->
+      <input type="text" class="form-control" placeholder="Text input">
+      <input type="email" class="form-control" placeholder="Email">
+      <input type="password" class="form-control" placeholder="Password">
+      <input type="number" class="form-control" placeholder="Number">
+      <input type="date" class="form-control" placeholder="Date">
+
+
+      <!-- Checkboxes & Radios -->
+       Checkboxes:
+       <div class="form-check">
+        <input class="form-check-input" type="checkbox" 
+        value="" id="flexcheckDefault">
+        <label class="form-check-label" 
+        for="flexcheckDefault">Check me out</label>
+       </div>
+
+       Radio:
+       <div class="form-check">
+        <input class="form-check-input" type="radio" 
+        name="exampleRadios" id="raio1" value="option1" checked>
+        <label class="form-check-label" for="radio1">
+            Option 1
+        </label>
+       </div>
+
+       <div class="form-check">
+        <input class="form-check-input" type="radio" 
+        name="exampleRadios" id="raio2" value="option2" checked>
+        <label class="form-check-label" for="radio1">
+            Option 2
+        </label>
+       </div>
+
+
+       <!-- Select Dropdown -->
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+
+        <!-- Textarea -->
+         <div>
+            <label for="exampleFormControlTextarea" 
+            class="form-label">
+                Message
+            </label>
+            <Textarea class="form-control"
+            id="exampleFormControlTextarea1" rows="3"></Textarea>
+         </div>
+
+         <!-- Form Validation Classes -->
+          Add feedback classes for validatio:
+          <input type="text" class="form-control is-valid" 
+          placeholder="Valid input">
+          <div class="valid feedback">Looks good!</div>
+
+          <input type="text" class="form-control is-invalid" 
+          placeholder="Invalid input">
+          <div class="invalid feedback">Please provide a valid value.</div>
+
+
+          <!-- Inline & Horizontal Forms -->
+           inline form:
+           <form class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="inlineEmail" 
+                class="visually-hidden">
+                    Email
+                </label>
+                <input type="email" class="form-control" 
+                id="inlineEmail" placeholder="exampleInputEmail">
+            </div>
+
+            <div class="col-auto">
+                <button type="button" class="btn btn-primary">
+                    Submit
+                </button>
+            </div>
+
+           </form>
+
+           <!-- Horizontal form using grid: -->
+            <div class="row mb-3 mt-4">
+                <label for="inputEmail" class="col-sm-2 col-form-label">
+                    Email
+                </label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" 
+                    id="inputEmail">
+                </div>
+            </div>
+
+            <!-- Full Working Example -->
+             <div class="container py-5">
+
+                <h3>Basic Form</h3>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control"
+                        placeholder="Enter email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" placeholder="Password"
+                        class="form-control">
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" 
+                        type="checkbox" id="check1">
+                        <label class="form-check-label" 
+                        for="check1">
+                            Remembe me
+                        </label>
+                    </div>
+                    <button class="btn btn-primary">Submit</button>
+                </form>
+
+                    <h3 class="mt-5">Select & Textarea</h3>
+                    <select class="form-select mb-3">
+                        <option selected>Select an option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                    </select>
+
+                    <textarea class="form-control mb-3"
+                    rows="3" placeholder="Type your message"></textarea>
+
+                    <h3>inline Form</h3>
+                    <form class="row g-3 align-items-center">
+                        <div class="col-auto">
+                            <input type="text" class="form-control" 
+                            placeholdere="Name">
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+                
+
+             </div>
+
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

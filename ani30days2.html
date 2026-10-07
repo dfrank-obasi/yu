@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            background: #020617;
+            display: grid;
+            place-items: center;
+            font-family: system-ui, sans-serif;
+        }
+        .btn {
+            background: #25634b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 999px;
+            padding: 1rem 1.5rem;
+
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            transition: transform 0.3s  ease , box-shadow 0.3s ease;
+        }
+        .text {
+            transition: transform 0.3s ease;
+        }
+        .icon {
+            opacity: 0;
+            /* transform: translateX(4px); */
+            /* transform: translateY(4px); */
+            transform: rotate(4deg);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba (0, 0, 0, 0.35);
+        }
+        .btn:hover text {
+            transform: translateX(-4px);
+        }
+        .btn:hover .icon {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+<button class="btn">
+    <span class="text">Get Started</span>
+    <span class="icon">'n</span>
+</button>
+</body>
+</html>

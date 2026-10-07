@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            --bg: #4f46e5;
+            --bg-hover: #6366f1;
+            --bg-active: #4338ca;
+            --text: #ffffff;
+
+            font-family: system-ui, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: none;
+
+            color: var(--text);
+            background: var(--bg);
+
+            cursor: pointer;
+
+            transition: 
+            background-color 0.25s ease,
+            transform 0.15s ease,
+            box-shadow 0.25s ease,
+            opacity 0.25s ease;
+        }
+
+        btn:active {
+            transform: translateY(2px);
+            background: var(--bg-active);
+        }
+        .btn:hover,
+        .btn:focus-visible {
+            background: var(--bg-hover);
+            box-shadow: 0 0 0 4px rgba (99, 102, 241, 0.25);
+        }
+
+        .btn:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+            opacity: 0.7;
+            box-shadow: none;
+        }
+
+        @keyframes disab                                       ledPulse {
+            0% {opacity: 0.6;}
+            50% {opacity: 0.8;}
+            100% {opacity: 0.6;}
+        }
+
+        .btn:disabled {
+            animation: disabledPulse 2s ease-in-out infinite;
+        }
+
+        .btn:disabled:hover ,
+        .btn:disabled:active {
+            transform: none;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Click me</button>
+    <button class="btn" disabled>Disabled</button>
+</body>
+</html>

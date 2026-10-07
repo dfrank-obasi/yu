@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+        box-sizing: border-box;
+       }
+       body {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #0f172a;
+        font-family: system-ui, sans-serif;
+       }
+       .card {
+        background: #1e293b;
+        color: white;
+        padding: 2rem;
+        border-radius: 12px;
+       
+       /* Transition live here */
+       transition: transform 0.6s ease-out, box-shadow 0.3s ease-out;
+       }
+       .card p {
+        opacity: 0;
+        transition: opacity 0.3s ease 0.1s;
+       }
+       .card:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 40px rgba (0, 0, 0, 0.4);
+       }
+       .card:hover p {
+        opacity: 1;
+       }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Hover Me</h2>
+        <p>This text fades in smoothly.</p>
+    </div>
+</body>
+</html>
